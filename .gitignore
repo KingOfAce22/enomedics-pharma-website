@@ -1,0 +1,28 @@
+node_modules
+# Secrets & Environment Variables
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# Dependencies
+node_modules/
+venv/
+.venv/
+
+# Build Outputs
+dist/
+build/
+.next/
+out/
+
+# macOS System Files
+.DS_Store
+
+# Editor & IDE Folders
+.vscode/
+.idea/
+
+# Logs
+*.logenv.example

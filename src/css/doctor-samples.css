@@ -1,0 +1,251 @@
+.hero h1,
+.page-heading h1,
+.samples-intro h1 {
+  font:
+    500 clamp(48px, 5.2vw, 74px)/1.07 Manrope,
+    sans-serif;
+  letter-spacing: -4px;
+  margin: 0;
+  color: #1b2923;
+}
+.hero h1 em,
+.page-heading h1 em,
+.samples-intro h1 em,
+.intro-grid h2 em,
+.section-heading h2 em,
+.professional-copy h2 em,
+.contact-strip h2 em,
+.detail-copy h1 em {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  color: #668571;
+  letter-spacing: -3px;
+}
+.samples-layout {
+  display: grid;
+  grid-template-columns: 0.7fr 1.3fr;
+  gap: 90px;
+  align-items: start;
+}
+.samples-intro {
+  position: sticky;
+  top: 125px;
+}
+.samples-intro h1 {
+  font-size: 53px;
+  margin: 20px 0;
+}
+.samples-intro > p {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #748076;
+  max-width: 330px;
+}
+.sample-callout {
+  display: flex;
+  gap: 13px;
+  background: #e8eee5;
+  padding: 17px;
+  margin-top: 30px;
+  color: #42664a;
+}
+.sample-callout svg {
+  flex-shrink: 0;
+}
+.sample-callout strong {
+  font-size: 10px;
+}
+.sample-callout p {
+  font-size: 9px;
+  line-height: 1.7;
+  color: #748076;
+  margin: 7px 0 0;
+}
+.sample-steps {
+  margin-top: 35px;
+}
+.sample-steps > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  border-top: 1px solid var(--line);
+  padding: 13px 0;
+}
+.sample-steps span {
+  font-size: 9px;
+  color: #78947b;
+}
+.sample-steps p {
+  font-size: 10px;
+  color: #58665b;
+  margin: 0;
+}
+.sample-form-wrap {
+  border: 1px solid var(--line);
+  background: #fbfcf8;
+  padding: 28px;
+}
+.form-heading {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 20px;
+  font-size: 8px;
+  letter-spacing: 1px;
+  color: #6f7f71;
+}
+.form-heading span:last-child {
+  letter-spacing: 0;
+  text-transform: none;
+}
+.form-section-title {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+  margin: 25px 0 17px;
+  font-size: 9px;
+  color: #719078;
+}
+.form-section-title span {
+  font: 600 15px Manrope;
+  color: #26392b;
+  letter-spacing: -0.4px;
+}
+.form-section-second {
+  margin-top: 32px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 17px 15px;
+}
+.form-grid label {
+  font-size: 10px;
+  color: #536257;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form-grid input,
+.form-grid select,
+.form-grid textarea {
+  width: 100%;
+  border: 1px solid #dfe5dc;
+  background: #fff;
+  padding: 12px 11px;
+  border-radius: 2px;
+  outline: none;
+  font-size: 10px;
+  color: #26392b;
+}
+.form-grid input:focus,
+.form-grid select:focus,
+.form-grid textarea:focus {
+  border-color: #76967b;
+}
+.form-grid input::placeholder,
+.form-grid textarea::placeholder {
+  color: #a2aaa2;
+}
+.form-grid textarea {
+  resize: vertical;
+}
+.consent {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 9px;
+  line-height: 1.7;
+  color: #657368;
+  margin: 25px 0;
+}
+.consent input {
+  accent-color: #315a40;
+  margin: 1px 0 0;
+}
+.submit-button {
+  width: 100%;
+  justify-content: space-between;
+}
+.form-privacy {
+  font-size: 8px;
+  line-height: 1.7;
+  color: #879188;
+  margin: 14px 0 0;
+}
+.form-alert {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  padding: 12px;
+  margin-top: 15px;
+  background: #edf2e9;
+  color: #4d6b51;
+  font-size: 10px;
+  line-height: 1.7;
+}
+.form-alert svg {
+  flex-shrink: 0;
+}
+.form-alert.error {
+  background: #f7e8e4;
+  color: #8e4d3e;
+}
+@media (max-width: 900px) {
+.samples-layout {
+    gap: 40px;
+  }
+.samples-intro h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 640px) {
+.samples-layout {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+.samples-intro {
+    position: static;
+  }
+.samples-intro h1 {
+    font-size: 47px;
+  }
+.samples-intro > p {
+    max-width: 420px;
+  }
+.sample-steps {
+    display: none;
+  }
+.sample-form-wrap {
+    padding: 20px 15px;
+  }
+.form-heading {
+    font-size: 7px;
+  }
+.form-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+
+/* Doctor samples editorial photography */
+.samples-editorial-image {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  margin-top: 28px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+@media (max-width: 850px) {
+  .samples-layout { grid-template-columns: 1fr; gap: 36px; }
+  .samples-intro { position: static; }
+  .samples-editorial-image { max-width: 520px; }
+}
+@media (max-width: 600px) {
+  .sample-form-wrap { padding: 20px 16px; }
+  .form-grid { grid-template-columns: 1fr; }
+  .full-field { grid-column: auto; }
+}
