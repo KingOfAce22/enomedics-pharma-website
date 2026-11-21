@@ -55,13 +55,13 @@ export default function Header() {
             About us
           </NavLink>
 
-          <a href="/doctor-samples" onClick={closeMenu}>
+          <NavLink to="/doctor-samples" onClick={closeMenu}>
             Doctor Samples
-          </a>
+          </NavLink>
 
-          <a href="/contact-us" onClick={closeMenu}>
+          <NavLink to="/contact-us" onClick={closeMenu}>
             Contact
-          </a>
+          </NavLink>
 
           <Link
             to="/checkout"
